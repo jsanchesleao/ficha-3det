@@ -28,7 +28,7 @@ input, textarea {
   position: relative;
   
   background-image: linear-gradient(rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%),
-                    url(/img/bg.png);
+                    url(../img/bg.png);
   
   background-size: cover;
 }
