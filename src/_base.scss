@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #333 0%, #333 10%, #fff 11%, #fff 89%, #333 90%);
+}
+
+input, textarea {
+  box-shadow: 1px 1px 1px 1px gray;
+  background-color: #e3ebf1;
+}

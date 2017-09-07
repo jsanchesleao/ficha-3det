@@ -1,0 +1,15 @@
+{
+  "name": "ficha-3det",
+  "description": "Ficha implementada com HTML e CSS.",
+  "version": "1.0.0",
+  "scripts": {
+    "build-sass": "node-sass src/style.scss -o css/",
+    "postcss": "postcss css/style.css --use autoprefixer -r",
+    "css": "npm run build-sass && npm run postcss"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.4",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.0"
+  }
+}

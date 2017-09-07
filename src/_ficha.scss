@@ -1,0 +1,173 @@
+.sheet__wrapper {
+  width: 800px;
+  margin: 2em auto;
+  background-color: white;
+  position: relative;
+}
+
+.sheet {
+  border: 4px dashed black;
+  font-size: 16px;
+  font-family: 'hind', sans-serif;
+  padding: 1em;
+  position: relative;
+  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%),
+                    url(../img/bg.png);
+  
+  background-size: cover;
+}
+
+.sheetHeading {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sheetHeading-title {
+  order: 1;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: arial;
+  color: lightgray;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  transform: scaleY(.8) translateY(-50%);
+}
+
+.sheetHeading-subtitle {
+  text-transform: capitalize;
+  font-size: 32px;
+  transform: scaleY(.7) translateY(-20%);
+}
+
+.inputGroup {
+  background-color: lightgray;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5em;
+}
+
+.inputGroup.--reverse {
+  flex-flow: row-reverse;
+}
+
+.inputGroup > .inputGroup {
+  min-width: 0;
+  flex: 1;
+  margin: 0;
+}
+
+.inputGroup > .inputGroup:first-child {
+  flex: 4;
+}
+
+.inputGroup-input {
+  outline: none;
+  border: 1px solid black;
+  min-width: 0;
+  line-height: 30px;
+  position: relative;
+  bottom: 5px;
+  flex: 1;
+  padding: 0 .5em;
+}
+
+.inputGroup-input.--small {
+  flex: 0;
+  min-width: 4em;
+}
+
+.inputGroup-input.--medium {
+  flex: 0;
+  min-width: 7em;
+}
+
+.inputGroup-label {
+  margin: 0 .5em;
+}
+
+.inputGroup-double {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0;
+  min-width: 0;
+}
+
+.characterData {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 748px;
+}
+
+.characterData > section {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.characterData-heading {
+  text-transform: capitalize;
+  font-size: 28px;
+  transform: scaleY(.7) translateY(20%);
+  margin-top: -10px;
+}
+
+.characterData-textarea {
+  width: 100%;
+  resize: none;
+  padding: 5px;
+  overflow: auto;
+}
+
+.combatTutorial {
+  font-size: 10px;
+  line-height: 12px;
+  padding: 0 4px;
+  background-color: rgba(200,200,200,0.9)
+}
+
+.combatTutorial-heading {
+  margin: 3px 0;
+  font-size: 3em;
+  transform: scaleY(.5)
+}
+
+.combatTutorial-step {
+  font-weight: bold;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.strongText {
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.strongText.--light {
+  text-transform: capitalize;
+}
+
+.strongText.--lighter {
+  text-transform: none;
+}
+
+.strongText::first-letter {
+  font-size: 2em;
+  color: #666;
+  line-height: .8em;
+}
+
+.strongText.--small::first-letter {
+  font-size: 1em;
+}
+
+.strongText.--lighter::first-letter {
+  color: inherit;
+}
