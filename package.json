@@ -3,12 +3,17 @@
   "description": "Ficha implementada com HTML e CSS.",
   "version": "1.0.0",
   "scripts": {
-    "build-sass": "node-sass src/style.scss -o css/",
+    "build-sass": "node-sass src/stylesheets/style.scss -o css/",
     "postcss": "postcss css/style.css --use autoprefixer -r",
-    "css": "npm run build-sass && npm run postcss"
+    "css": "npm run build-sass && npm run postcss",
+    "js": "browserify src/javascript/main.js -o js/main.js",
+    "build": "npm run js && npm run css",
+    "preview": "npm run build && http-server ."
   },
   "dependencies": {
     "autoprefixer": "^7.1.4",
+    "browserify": "^14.4.0",
+    "http-server": "^0.10.0",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.0"
   }

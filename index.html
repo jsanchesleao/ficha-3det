@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="128x128" href="img/icon.png">
+  <link rel="icon" sizes="128x128" href="img/icon.png">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
   <title>Defensores de T&oacute;quio - Alpha</title>
 </head>
 <body>
@@ -18,7 +21,7 @@ http://4.bp.blogspot.com/-yHGfJ9ugIvg/U7nsCDSZPbI/AAAAAAAADxk/mbUMYMa6Sx0/s1600/
       <h1 class="sheetHeading-title">Ficha de personagem</h1>
       <h2 class="sheetHeading-subtitle">3D&amp;T &#9679; defensores de t&oacute;quio 3&ordf; edi&ccedil;&atilde;o alpha</h2>
     </header>
-    <form>
+    <form name="ficha">
       <div class="inputGroup">
         <div class="inputGroup">
           <label class="inputGroup-label" for="char-name">Nome</label>
@@ -96,27 +99,27 @@ http://4.bp.blogspot.com/-yHGfJ9ugIvg/U7nsCDSZPbI/AAAAAAAADxk/mbUMYMa6Sx0/s1600/
         </section>
         <section class="characterData-textField">
           <h3 class="characterData-heading">vantagens</h3>
-          <textarea class="characterData-textarea" rows="8"></textarea>
+          <textarea class="characterData-textarea" rows="8" name="vantagens"></textarea>
         </section>
         <section class="characterData-textField">
           <h3 class="characterData-heading">desvantagens</h3>
-          <textarea class="characterData-textarea" rows="5"></textarea>
+          <textarea class="characterData-textarea" rows="5" name="desvantagens"></textarea>
         </section>
         <section class="characterData-textField">
           <h3 class="characterData-heading">tipos de dano</h3>
-          <textarea class="characterData-textarea" rows="3"></textarea>
+          <textarea class="characterData-textarea" rows="3" name="tiposdedano"></textarea>
         </section>
         <section class="characterData-textField" class="spells">
           <h3 class="characterData-heading">magias conhecidas</h3>
-          <textarea class="characterData-textarea" rows="5"></textarea>
+          <textarea class="characterData-textarea" rows="5" name="magias"></textarea>
         </section>
         <section class="characterData-textField">
           <h3 class="characterData-heading">dinheiro e itens</h3>
-          <textarea class="characterData-textarea" rows="4"></textarea>
+          <textarea class="characterData-textarea" rows="4" name="itens"></textarea>
         </section>
         <section class="characterData-textField">
           <h3 class="characterData-heading">hist&oacute;ria</h3>
-          <textarea class="characterData-textarea" rows="6"></textarea>
+          <textarea class="characterData-textarea" rows="6" name="historia"></textarea>
         </section>
         <section class="combatTutorial">
           <h3 class="combatTutorial-heading">turno de combate</h3>
@@ -133,5 +136,6 @@ http://4.bp.blogspot.com/-yHGfJ9ugIvg/U7nsCDSZPbI/AAAAAAAADxk/mbUMYMa6Sx0/s1600/
     </form>
   </div>
 </div>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
