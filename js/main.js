@@ -37,6 +37,7 @@ function readForm() {
     maxpvs: read('maxpvs'),
     pms: read('pms'),
     maxpms: read('maxpms'),
+    xp: read('xp'),
     vantagens: read('vantagens'),
     desvantagens: read('desvantagens'),
     tiposdedano: read('tiposdedano'),
@@ -70,6 +71,7 @@ function restoreForm(name) {
     elements.maxpvs.value = data.maxpvs;
     elements.pms.value = data.pms;
     elements.maxpms.value = data.maxpms;
+    elements.xp.value = data.xp;
     elements.vantagens.value = data.vantagens;
     elements.desvantagens.value = data.desvantagens;
     elements.tiposdedano.value = data.tiposdedano;
